@@ -3,6 +3,14 @@ import re
 from datetime import timedelta
 
 '''
+Installing Google API Client
+
+pip install virtualenv
+virtualenv <your-env>
+<your-env>\Scripts\activate
+dev\Scripts\pip.exe install google-api-python-client
+
+
 https://developers.google.com/youtube/v3/docs/?apix=true
 
 
@@ -305,22 +313,15 @@ output_filename = 'Programming with Mosh.csv' # DEFAULT 'playlist.txt'
 
 
 '''
-Building a Social Media App With Django: Part 1 Landing Page and User Authentication
-Legion Script - Building a Social Media App With Django
-47,723 views  20 Dec 2020  Social Media Web App With Python 3 and Django
-https://www.youtube.com/playlist?list=PLPSM8rIid1a3TkwEmHyDALNuHhqiUiU5A
-
-Minecraft 1.19.3 - Forge Modding Tutorial: Workspace Setup | #1
-
-Modding by Kaupenjoe
-21.1K subscribers
-
-https://www.youtube.com/watch?v=p-mp91zrlqo&list=PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA
+A level: OCR Specification Order
+Craig'n'Dave
+162 videos 1,627,344 views Last updated on 26 Jan
+https://www.youtube.com/playlist?list=PLCiOXwirraUBj7HtVHfNZsnwjyZQj97da
 
 '''
 
-playlist_id = 'PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA'
-output_filename = 'Modding by Kaupenjoe - Minecraft 1.19.3 - Forge Modding Tutorial' # DEFAULT 'playlist.txt'
+playlist_id = 'PLCiOXwirraUBj7HtVHfNZsnwjyZQj97da'
+output_filename = 'CraignDave - A level - OCR videos' # DEFAULT 'playlist.txt'
 #output_playlist_items(playlist_id)
 output_playlist_items_info(playlist_id, f'playlistitems/{output_filename}.csv', True)
 
