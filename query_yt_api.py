@@ -8,6 +8,14 @@ import googleapiclient.errors
 from datetime import timedelta
 
 '''
+Installing Google API Client
+
+pip install virtualenv
+virtualenv <your-env>
+<your-env>\Scripts\activate
+dev\Scripts\pip.exe install google-api-python-client
+
+
 # Ensure you have a valid API key by going to 
 API key (mrblackie): AIzaSyAivmOAheHIxPsAFo4G3Rd_ujvxIWkgJwk
 
@@ -368,21 +376,25 @@ def do_all(get_channel_info, get_sub_info, dump_sub_info, get_playlist_info, get
         output_playlist_info({channel_id}, f'playlists/{output_filename}', True)
 
 
-    '''
-Flask Tutorials - Python Web Development
-JimShapedCoding
-16 videos 49,875 views Last updated on 23 Jan 2021
-https://www.youtube.com/playlist?list=PLOkVupluCIjuPtTkhO6jmA76uQR994Wvi
-    '''
+'''
+Building a Social Media App With Django: Part 1 Landing Page and User Authentication
+Legion Script - Building a Social Media App With Django
+47,723 views  20 Dec 2020  Social Media Web App With Python 3 and Django
+https://www.youtube.com/playlist?list=PLPSM8rIid1a3TkwEmHyDALNuHhqiUiU5A
 
-    playlist_id = 'PLOkVupluCIjuPtTkhO6jmA76uQR994Wvi'
-    output_filename = 'JimShapedCoding - Flask Tutorials' # DEFAULT 'playlist.txt'
-    
-    if get_playlist_items:
-        output_playlist_items(playlist_id)
-        
-    if get_playlist_items_info:
-        output_playlist_items_info(playlist_id, f'playlistitems/{output_filename}.csv', True)
+Minecraft 1.19.3 - Forge Modding Tutorial: Workspace Setup | #1
+
+Modding by Kaupenjoe
+21.1K subscribers
+
+https://www.youtube.com/watch?v=p-mp91zrlqo&list=PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA
+
+'''
+
+playlist_id = 'PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA'
+output_filename = 'Modding by Kaupenjoe - Minecraft 1.19.3 - Forge Modding Tutorial' # DEFAULT 'playlist.txt'
+#output_playlist_items(playlist_id)
+output_playlist_items_info(playlist_id, f'playlistitems/{output_filename}.csv', True)
 
     if calculate_playlist_duration:
         calculate_playlist_duration(playlist_id)
