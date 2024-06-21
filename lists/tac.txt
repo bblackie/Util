@@ -1,0 +1,7 @@
+Deck 1 - Python - Intro
+Deck 2 - Python - Collections 
+Deck 3 - Python - Multi-dimensional lists
+Deck 4 - Python - Functions
+Deck 5 - Python - String Manipulation
+Deck 6 - Python - GUI
+Deck 7 - Python - Pre-Assessment Guide

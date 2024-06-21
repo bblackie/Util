@@ -1,13 +1,25 @@
 import os
 
-folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessment\\AS91886 1.10 HCI\\Student work\\'
-folder_root = 'D:\\src\\11DGT\\'
+
+list = 'names-Y11.txt'
+folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessments\\AS92004(1.1) Programming\\Student work\\'
+folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
+
+
+#folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\NCEA\\Exams - DCATs\\DCATs\\L3\\91909\\Student submissions\\'
+#folder_root = 'D:\\src\\11DGT\\'
 
 # C:\Users\brian.blackie\OneDrive - Trinity Schools\Classes\12DGT\Assessments\2.2 Design\Student work
 
-with open('names-Y11.txt') as x:
+
+
+
+
+with open(f'data/classes/{list}') as x:
     for line in x:
         line = line.strip()
-        os.mkdir(folder_root + str(line))
+        if not os.path.exists(folder_root + str(line)):
+            os.mkdir(folder_root + str(line))
 
 
+print('Mission complete.')
