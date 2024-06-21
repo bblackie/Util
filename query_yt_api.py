@@ -1,5 +1,10 @@
-from googleapiclient.discovery import build
+import os
 import re
+
+from googleapiclient.discovery import build
+import google_auth_oauthlib.flow
+import googleapiclient.errors
+
 from datetime import timedelta
 
 '''
@@ -11,8 +16,24 @@ virtualenv <your-env>
 dev\Scripts\pip.exe install google-api-python-client
 
 
+# Ensure you have a valid API key by going to 
+API key (mrblackie): AIzaSyAivmOAheHIxPsAFo4G3Rd_ujvxIWkgJwk
+
+# Enable YT Data API v3 here: https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=573100328637
+
+
+# all APIs are here
+https://developers.google.com/apis-explorer/#p/
+
+# were are interested in the YT api as follows
 https://developers.google.com/youtube/v3/docs/?apix=true
 
+
+
+
+Installation
+------------
+pip install --upgrade google-api-python-client
 
 Use channels resource to get contentDetails, which contains the channel id, e.g. 'id': 'UCA_bnmQSuS-_J2VDzbl5uDg'
 Use playlists resource to get ..
@@ -26,9 +47,25 @@ SETUP:
 
 
 '''
-api_key = 'AIzaSyBrPr9-jetMN0dI4-UJQdF4ULUvXIDz6M0'
+scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
+# Disable OAuthlib's HTTPS verification when running locally.
+# *DO NOT* leave this option enabled in production.
+os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+api_service_name = "youtube"
+api_version = "v3"
 
-youtube = build('youtube', 'v3', developerKey=api_key)
+api_key = 'AIzaSyAivmOAheHIxPsAFo4G3Rd_ujvxIWkgJwk' #'AIzaSyBrPr9-jetMN0dI4-UJQdF4ULUvXIDz6M0'
+
+
+# Get credentials and create an API client
+    # flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+    #     client_secrets_file, scopes)
+# credentials = flow.run_console()
+#youtube = googleapiclient.discovery.build(api_service_name, api_version, credentials=credentials)
+youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_key)
+#youtube = build(api_service_name, api_version, developerKey=api_key)
+
+
 
 def output_total_seconds_nicely(total_seconds):
     minutes, seconds = divmod(total_seconds, 60)
@@ -64,7 +101,7 @@ def output_subscriptions_info(channel_id, output_file, is_one_line):
                     f.write(f'"{sub_title}","{sub_desc}",https://www.youtube.com/channel/{sub_channel_id}\n')
 
                 else:
-                    f.write(f'order: {i}\n')
+                    f.write(f'number: {i}\n')
                     f.write(f'title: {sub_title}\n')
                     f.write(f'date: {sub_desc}\n')
                     f.write(f'https://www.youtube.com/channel/{sub_channel_id}\n')
@@ -103,10 +140,19 @@ def output_channel_info(username):
     with open("channel.json", "w") as outfile:
         outfile.write(str(dict_response))
 
-    channel_id = dict_response['items'][0]['id']
-    if channel_id is None:
-        print("ID is null!!!")
-    return channel_id
+    results = dict_response['pageInfo']['totalResults']
+    
+    if results > 0:
+    
+        channel_id = dict_response['items'][0]['id']
+        if channel_id is None:
+            print("ID is null!!!")
+        return channel_id
+    
+    with open("channel.json", "a") as outfile:
+        outfile.write("\nNo results.")
+
+    return 0
 
 def output_playlist_info(channel_id, output_file, is_one_line=False):
 
@@ -211,16 +257,16 @@ def output_playlist_items_info(playlist_id, output_file, is_one_line=False ):
                 video_duration = get_video_duration(video_id)
 
                 if is_one_line:
-                    f.write(f'{video_index},"{video_title}",{video_date},{video_duration},https://www.youtube.com/watch?v={video_id}\n')
+                    f.write(f'{video_index+1},{video_duration},"{video_title}",https://www.youtube.com/watch?v={video_id},{video_date}\n')
 
                 else:
 
-                    f.write(f'{video_index}.\n')   
-                    f.write(f'title: {video_title}\n')
-                    f.write(f'date: {video_date}\n')
+                    f.write(f'{video_index+1}.\n')   
                     f.write(f'duration: {video_duration}\n')
+                    f.write(f'title: {video_title}\n')                   
                     f.write(f'https://www.youtube.com/watch?v={video_id}\n')
                     #f.write(f'description:\n {video_desc}\n')
+                    f.write(f'date: {video_date}\n')
                     f.write('\n')
             
             nextPageToken = pli_response.get('nextPageToken')
@@ -301,28 +347,64 @@ def calculate_playlist_duration(playlist_id):
     
     print(output_total_seconds_nicely(total_seconds))
 
-# Get channel id by username
-# is outputted to channel.json
-#output_channel_info('clone278')
-#output_subscriptions_info('UCA_bnmQSuS-_J2VDzbl5uDg', f'subscriptions/clone278.txt', False)
-#dump_subscriptions_info('UCA_bnmQSuS-_J2VDzbl5uDg')
-# Get playlist into by channel id
-# is outputted to playlists.json
-output_filename = 'Programming with Mosh.csv' # DEFAULT 'playlist.txt'
-#output_playlist_info("UCWv7vMbMWH4-V0ZXdmDpPBA", f'playlists/{output_filename}', True)
+
+def do_all(get_channel_info, get_sub_info, dump_sub_info, get_playlist_info, get_playlist_items, get_playlist_items_info, calculate_playlist_duration):
+    
+    yt_username = '101Computing'
+    
+    # Get channel id by username
+    # is outputted to channel.json
+    if get_channel_info:
+        output_channel_info({yt_username})
+    
+    
+    channel_id = "UCWv7vMbMWH4-V0ZXdmDpPBA"  # 'UCA_bnmQSuS-_J2VDzbl5uDg' #clone278 UCWd6hxkb0CDrPSXVeSs86Zw
+        
+    if get_sub_info:
+        output_subscriptions_info({channel_id}, f'subscriptions/{yt_username}.txt', False)
+    
+    if dump_sub_info:
+        dump_subscriptions_info({channel_id})
+          
+    producer_name = "Programming with Mosh" 
+        
+    # Get playlist into by channel id
+    # is outputted to playlists.json
+    output_filename = f'{producer_name}.csv' # DEFAULT 'playlist.txt'
+    
+    if get_playlist_info:
+        output_playlist_info({channel_id}, f'playlists/{output_filename}', True)
 
 
 '''
-A level: OCR Specification Order
-Craig'n'Dave
-162 videos 1,627,344 views Last updated on 26 Jan
-https://www.youtube.com/playlist?list=PLCiOXwirraUBj7HtVHfNZsnwjyZQj97da
+Building a Social Media App With Django: Part 1 Landing Page and User Authentication
+Legion Script - Building a Social Media App With Django
+47,723 views  20 Dec 2020  Social Media Web App With Python 3 and Django
+https://www.youtube.com/playlist?list=PLPSM8rIid1a3TkwEmHyDALNuHhqiUiU5A
+
+Minecraft 1.19.3 - Forge Modding Tutorial: Workspace Setup | #1
+
+Modding by Kaupenjoe
+21.1K subscribers
+
+https://www.youtube.com/watch?v=p-mp91zrlqo&list=PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA
 
 '''
 
-playlist_id = 'PLCiOXwirraUBj7HtVHfNZsnwjyZQj97da'
-output_filename = 'CraignDave - A level - OCR videos' # DEFAULT 'playlist.txt'
+playlist_id = 'PLKGarocXCE1FlLU16RRfaS0bcabHDSvLA'
+output_filename = 'Modding by Kaupenjoe - Minecraft 1.19.3 - Forge Modding Tutorial' # DEFAULT 'playlist.txt'
 #output_playlist_items(playlist_id)
 output_playlist_items_info(playlist_id, f'playlistitems/{output_filename}.csv', True)
 
-#calculate_playlist_duration(playlist_id)
+    if calculate_playlist_duration:
+        calculate_playlist_duration(playlist_id)
+        
+    print("Mission complete.")
+        
+do_all(False, #get_channel_info
+            False, #get_sub_info, 
+            False, #dump_sub_info, 
+            False, #get_playlist_info, 
+            False, #get_playlist_items, 
+            True, #get_playlist_items_info, 
+            False) #calculate_playlist_duration)
