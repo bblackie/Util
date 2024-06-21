@@ -1,23 +1,31 @@
 import os
 import random
 
-list = 'names-Y11.txt'
+list = 'names-Y12.txt'
 
 students = []
 selected = []
+
+def print_names(student_list):
+    for student in student_list:
+        print(student)
 
 with open(f'data/classes/{list}') as x:
     for line in x:
         students.append(line.replace('\n',''))
         
-        
-print(students)
+
+print("\n\n### BEFORE...\n")        
+print_names(students)
 
 
 for i in range(len(students)):
-    rand_idx = random.randint(0, len(students))
+    num_students_left = len(students)
+    rand_idx = random.randint(0, num_students_left-1)
     selected.append(students[rand_idx])
     students.pop(rand_idx)
-    print("\nStudents: ", students)
-    print("\nSelected:", selected)
-    print("#############")
+    
+    
+print("\n\n### AFTER...\n")        
+print_names(selected)
+print('\n')
