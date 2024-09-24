@@ -1,8 +1,8 @@
 import os
 
 
-list = 'names-Y11.txt'
-folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessments\\AS92004(1.1) Programming\\Student work\\'
+list = 'names-Y13.txt'
+folder_root = 'https://trinityschools.sharepoint.com/sites/Section_20246113DGT/Shared Documents/General/Student work/'
 folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
 
 
