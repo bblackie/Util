@@ -1,7 +1,13 @@
 import os
 import random
 
-list = 'names-Y12.txt'
+intro = '''
+#####################################
+###       STUDENT RANDOMISER      ### 
+#####################################
+Matches the logic of most students!
+'''
+list = 'names-Y13.txt'
 
 students = []
 selected = []
@@ -15,7 +21,9 @@ with open(f'data/classes/{list}') as x:
         students.append(line.replace('\n',''))
         
 
-print("\n\n### BEFORE...\n")        
+
+print(intro)
+print("\n### ORDERED BY LASTNAME...\n")        
 print_names(students)
 
 
@@ -26,6 +34,6 @@ for i in range(len(students)):
     students.pop(rand_idx)
     
     
-print("\n\n### AFTER...\n")        
+print("\n\n### COMPLETELY RANDOMISED...\n")        
 print_names(selected)
 print('\n')
