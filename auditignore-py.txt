@@ -1,0 +1,10 @@
+# Not sure it can see hidden folders but add this anyway
+.git\
+.vscode\
+
+# Ignore specific files
+.gitignore
+desktop.ini
+package-lock.json
+package.json
+readme.md
