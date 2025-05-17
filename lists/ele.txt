@@ -1,0 +1,8 @@
+Arduino Step-By-Step Projects eBook
+Build_Web_Servers_ESP32_ESP8266_V2_2
+Electronics For Beginners - Rui Santos & Sara Santos
+Firebase_Web_App_ESP32_ESP8266_V1_3
+Learn_LVGL_Build_GUIs_for_ESP32_Projects_V1_4
+Learn_Raspberry_Pi_Pico_W_with_MicroPython_V1_1
+MicroPython_Programming_with_ESP32_and_ESP8266_V2
+Smart_Home_Raspberry_Pi_ESP32_ESP8266_V1_5

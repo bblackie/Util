@@ -1,0 +1,36 @@
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Dependency directories
+node_modules\
+
+# Not sure it can see hidden folders but add this anyway
+.git\
+.vscode\
+
+# Ignore specific files
+.gitignore
+desktop.ini
+package-lock.json
+package.json
+readme.md
+
+# Ignore Databases
+*.db
+*.sqlite
+*.db
+*.db3
+*.sqlite3
+*.sqbpro
+
+# Ignore media files
+*.mp4
+images\
+*.png
+*.jpg
+*.ico
+*.svg
+
+# Ignore styling
+*.css

@@ -1,0 +1,19 @@
+python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r
+
+
+python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r -i '.\auditignore.txt'
+
+
+
+python audit.py -d 'C:\Repos\13DGT\JW\KiwiScents' -r -i '.\auditignore.txt'
+
+
+C:\Repos\13DGT\AdZ\PointsPlus
+C:\Repos\13DGT\BB\elections_site
+C:\Repos\13DGT\CB\2025-DGT
+C:\Repos\13DGT\CG\JapanWebsite
+C:\Repos\13DGT\JW\KiwiScents
+C:\Repos\13DGT\MH\DGT-2025
+C:\Repos\13DGT\WJ\agri-lime-site
+C:\Repos\13DGT\WP\y13-website
+

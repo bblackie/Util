@@ -8,8 +8,11 @@ def create_pdf(filename):
     c.drawString(100, 750, "Hello, I am a PDF document created with Python!")
     c.save()
 
-list = 'names-nsn-Y12.txt'
-folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91899(2.10) Reflective Summary\\Student work\\'
+list = 'names-nsn-Y11.txt'
+folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessments\\AS92006(1.3) HCI\\Student work\\'
+#folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91899(2.10) Reflective Summary\\Student work\\'
+#folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\AS91909(3.10) Reflective Analysis\\Student work\\'
+
 #folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
 
 
