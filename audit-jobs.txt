@@ -5,7 +5,7 @@ python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r -i '.\auditignore.txt'
 
 
 
-python audit.py -d 'C:\Repos\13DGT\JW\KiwiScents' -r -i '.\auditignore.txt'
+python audit.py -d 'C:\Repos\11DGT\KR\untitled-folder-2' -r -i '.\auditignore.txt'
 
 
 C:\Repos\13DGT\AdZ\PointsPlus
