@@ -1,0 +1,35 @@
+https://github.com/yt-dlp/yt-dlp/wiki/FAQ
+
+
+yt-dlp -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PL7BImOT2srcGuDQyPsvInT9NfS4pa2jg3"
+
+https://www.youtube.com/playlist?list=PL7BImOT2srcGuDQyPsvInT9NfS4pa2jg3
+
+
+
+yt-dlp --cookies cookies-ldgt.txt --extract-audio --audio-format mp3 "PLLiAOGTcrAFoeroJLsOowk8Gv7YzhSWDc" -o "%(playlist_index)s-%(title)s.%(ext)s"
+
+git clone https://github.com/xenova/whisper-web.git
+
+
+
+step 1: cd to destination drive
+
+Step 2: Use the get cookie locally extension to update the cookie info
+
+
+
+
+yt-dlp --cookies cookies.txt -o "downloads\%(playlist)s\%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PLCaa9Mqfv2uj7wtw2qz5FJrGdNVwvZ3td"
+
+
+yt-dlp --cookies-from-browser chrome:Bill https://www.youtube.com/playlist?list=PLCaa9Mqfv2uj7wtw2qz5FJrGdNVwvZ3td
+
+
+yt-dlp --username billjobs7576@gmail.com --password "NJXhY[y8%^jT8D__" https://www.youtube.com/playlist?list=PLCaa9Mqfv2uj7wtw2qz5FJrGdNVwvZ3td
+
+yt-dlp --cookies clone278_cookies.txt -o "downloads\%(playlist)s\%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PLA4uAeilYkMy9IYeOLjwQ-vw3Kbsjphxp"
+
+
+
+yt-dlp -u clone278@gmail.com https://www.youtube.com/playlist?list=PLA4uAeilYkMy9IYeOLjwQ-vw3Kbsjphxp

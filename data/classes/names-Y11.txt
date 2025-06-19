@@ -1,19 +1,6 @@
-Bentley Black
-Henry de Klerk
-Lucas Do
-Robert Fenemor
-Quinn Hewitt
-Alexander Matuszek
-Lachlan McCurdy
-Sam McGuinness
-Arth Patel
-Conrad Sale
-Tobin Schleifer
-Tysen Southey
-Pun Srichomkwan
-Ethan Tayler
-Jayden Thalari
-Corbin Vibert
-Andy Wang
-Jonathan Wong
-Togo Yoshizumi
+Kaden Govindasamy
+Linkon Mende
+Parker Mills
+Leo Miyake
+Kade Robinson
+Oliver Williams

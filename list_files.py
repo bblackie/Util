@@ -34,14 +34,13 @@ def list_filenames(root):
         outfile.close()
 
 
-def list_files(root, output_filename):
+def list_files(root, extension, output_filename):
     
-    extension = '.pptx'
     path = f'{root}*{extension}'
 
     try:
         # output playlist items to csv or txt file
-        outfile = open(f'lists/{output_filename}', "w")
+        outfile = open(f'lists/{output_filename}', "w", encoding='utf-8')
 
         for file in sorted(glob.glob(path, recursive=False)):
             full_filename = os.path.basename(file)
@@ -61,9 +60,10 @@ Main function
 '''
 
 folder = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
-folder2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Lessons\\Advanced Techniques\\'
+folder2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Subjects\\Electronics\\_MY LEARNING\\'
+folder3 = r'C:\Repos\13DGT\AdZ\PointsPlus\\'
 
-list_files(folder2, "tac.txt")
+list_files(folder3, "*", "list_files.txt")
 
 
 #list_filenames(folder)

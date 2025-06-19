@@ -14,7 +14,7 @@ python -m venv .venv
 
 To activate virtual environment:
 ================================
-venv\scripts\activate
+.venv\scripts\activate
 
 source venv/bin/activate
 
