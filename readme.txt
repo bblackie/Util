@@ -10,11 +10,13 @@ To install a virtual environment called "dev"
 REM: Remember that a virtual environment creates a small project-specific set of code libraries, which makes them easier to delete and avoids versioning hell,
 encountered when running multiple projects on one machine.
 =========================================================
-python -m venv venv
+python -m venv .venv
 
 To activate virtual environment:
 ================================
 venv\scripts\activate
+
+source venv/bin/activate
 
 To install Flask, if not already installed
 ==========================================
@@ -23,6 +25,8 @@ pip install flask
 To run:
 =======
 python app.py
+
+
 
 
 
