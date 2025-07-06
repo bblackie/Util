@@ -16,6 +16,8 @@ To activate virtual environment:
 ================================
 .venv\scripts\activate
 
+source venv/bin/activate
+
 To install Flask, if not already installed
 ==========================================
 pip install flask
@@ -23,6 +25,8 @@ pip install flask
 ### To run:
 
 python app.py
+
+
 
 
 
