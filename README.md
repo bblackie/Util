@@ -20,8 +20,8 @@ To install Flask, if not already installed
 ==========================================
 pip install flask
 
-To run:
-=======
+### To run:
+
 python app.py
 
 

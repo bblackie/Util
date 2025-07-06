@@ -4,9 +4,11 @@ python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r
 python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r -i '.\auditignore.txt'
 
 
+# Audit python project
+python audit.py -d 'C:\Repos\12DGT\TSou\rc-y12-tsou-app' -r -i '.\auditignore-py.txt'
 
-python audit.py -d 'C:\Repos\11DGT\OW\New-folder' -r -i '.\auditignore-py.txt'
-python audit.py -d 'C:\Repos\11DGT\KR\untitled-folder-2' -r -i '.\auditignore.txt'
+# Audit nodeJS projuect
+python audit.py -d 'C:\Repos\13DGT\BB\elections_site' -r -i '.\auditignore-node.txt'
 
 
 C:\Repos\13DGT\AdZ\PointsPlus
