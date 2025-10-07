@@ -1,8 +1,8 @@
 import os
 
 
-list = 'names-y12-initials.txt'
-folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91893(2.4) Website\\Student work\\'
+list = 'dge-num-y12.txt'
+folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91898(2.9) Comp Sci - AI\\Student work\\'
 folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
 
 
