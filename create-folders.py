@@ -1,8 +1,8 @@
 import os
 
 
-list = 'names-y12-initials.txt'
-folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91893(2.4) Website\\Student work\\'
+list = 'names-y13.txt'
+folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\AS91909(3.10) Reflective Analysis\\Student work\\'
 folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
 
 
