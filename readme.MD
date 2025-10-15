@@ -20,7 +20,15 @@ source venv/bin/activate
 
 To install Flask, if not already installed
 ==========================================
-pip install flask
+pip install pypdf
+pip install yt-dlp
+pip install ffmpeg-python # ffmpeg must be installed on the machine https://www.ffmpeg.org/download.html
+
+To install ffmpeg, if not already installed
+==========================================
+See https://www.ffmpeg.org/download.html
+choco install ffmpeg
+
 
 To run:
 =======

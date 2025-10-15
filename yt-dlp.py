@@ -21,4 +21,8 @@ yt-dlp -v --cookies cookies.txt -o '~Downloads/' https://www.youtube.com/playlis
 Un: clone278@gmail.com
 Pw: 1948V1nc3ntR4p1d3$3r13$C!
 yt-dlp --username 'clone278@gmail.com' --password '1948V1nc3ntR4p1d3$3r13$C!' -o '~Downloads/' https://www.youtube.com/playlist?list=PL-1Nqb2waX4XvCXzW2n6fj826P28IhEye
+
+yt-dlp -f "bestvideo+bestaudio" "https://www.youtube.com/watch?v=WdJjMJCdyoA"
+
+
 '''
