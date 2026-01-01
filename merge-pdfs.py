@@ -39,4 +39,14 @@ def merge_pdfs_in_directory(input_directory, output_filename="merged_output.pdf"
 
 
 if __name__ == "__main__":
-    merge_pdfs_in_directory("my_pdfs", "my_pdfs\\91909 Marked Script - WP.pdf")
+    merge_pdfs_in_directory("my_pdfs", "my_pdfs\\91909 Marked Script - WP.pdf")from pypdf import PdfMerger
+
+pdfs = ['A.pdf', 'Q2C.pdf', 'B.pdf']
+
+merger = PdfMerger()
+
+for pdf in pdfs:
+    merger.append("merge/" + pdf)
+
+merger.write("merge/result.pdf")
+merger.close()
