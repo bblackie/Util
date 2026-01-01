@@ -34,7 +34,7 @@ images\
 *.svg
 
 # Ignore styling
-*.css
+# *.css
 
 # Sandbox and reference files
 *.txt

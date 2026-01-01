@@ -2,7 +2,7 @@ import os
 
 
 list = 'initials-Y12.txt'
-folder_root = 'C:\\Repos\\12DGT\\91896\\'
+folder_root = 'C:\\Repos\\12DGT\\91893-web\\'
 folder_root2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91896(2.7) Computer Program\\Student work\\'
 
 
@@ -18,8 +18,8 @@ folder_root2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\12DGT\\As
 with open(f'data/classes/{list}') as x:
     for line in x:
         line = line.strip()
-        if not os.path.exists(folder_root2 + str(line)):
-            os.mkdir(folder_root2 + str(line))
+        if not os.path.exists(folder_root + str(line)):
+            os.mkdir(folder_root + str(line))
 
 
 print('Mission complete.')

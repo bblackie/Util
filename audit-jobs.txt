@@ -5,19 +5,18 @@ python audit.py -d 'C:\Repos\11DGT\KG\Python-Proj' -r -i '.\auditignore.txt'
 
 
 # Audit python project
-python audit.py -d 'C:\Repos\12DGT\TSou\rc-y12-tsou-app' -r -i '.\auditignore-py.txt'
+python audit.py -d 'C:\Repos\12DGT\91893-web\TSo\91893---Tysen-Main' -r -i '.\auditignore-py.txt'
+
+C:\Repos\12DGT\91893-web\QH\how-to-brake-a-website
+python audit.py -d 'C:\Repos\12DGT\91893-web\LM\AS91983' -r -i '.\auditignore-py.txt'
+
 
 # Audit nodeJS projuect
-python audit.py -d 'C:\Repos\13DGT\BB\elections_site' -r -i '.\auditignore-node.txt'
+python audit.py -d 'C:\Repos\13DGT\91903-Web\JW\Website' -r -i '.\auditignore-node.txt'
 
 
-C:\Repos\13DGT\AdZ\PointsPlus
-C:\Repos\13DGT\BB\elections_site
-C:\Repos\13DGT\CB\2025-DGT
-C:\Repos\13DGT\CG\JapanWebsite
-C:\Repos\13DGT\JW\KiwiScents
-C:\Repos\13DGT\MH\DGT-2025
-C:\Repos\13DGT\WJ\agri-lime-site
-C:\Repos\13DGT\WP\y13-website
 
+
+
+python audit.py -d 'C:\Repos\13DGT\91902-DB\WJ\Stock-website' -r -i '.\auditignore-node.txt'
 

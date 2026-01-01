@@ -1,0 +1,147 @@
+{
+  "quiz_title": "Vocabulary in Context Quiz",
+  "source": "converted_timestamps.json",
+  "grade_range": "8–12",
+  "questions": [
+    {
+      "id": 1,
+      "word": "exquisite",
+      "excerpt": "this exquisite bowl was fashioned about 1520,",
+      "question": "What does the word \"exquisite\" most nearly mean in this context?",
+      "options": {
+        "A": "Old",
+        "B": "Extremely beautiful",
+        "C": "Fragile",
+        "D": "Rare",
+        "E": "I do not know"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 2,
+      "word": "fashioned",
+      "excerpt": "this exquisite bowl was fashioned about 1520,",
+      "question": "What does the word \"fashioned\" mean here?",
+      "options": {
+        "A": "Painted",
+        "B": "Designed recently",
+        "C": "Made by hand",
+        "D": "Copied",
+        "E": "I do not know"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 3,
+      "word": "fetch",
+      "excerpt": "it would certainly fetch a price in excess of 1 million American dollars.",
+      "question": "What does the word \"fetch\" mean in this sentence?",
+      "options": {
+        "A": "Carry",
+        "B": "Steal",
+        "C": "Be sold for",
+        "D": "Hide",
+        "E": "I do not know"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 4,
+      "word": "subsidiaries",
+      "excerpt": "I own a number of subsidiaries throughout the world,",
+      "question": "What are \"subsidiaries\"?",
+      "options": {
+        "A": "Independent governments",
+        "B": "Small factories",
+        "C": "Partner organisations",
+        "D": "Companies owned by a larger company",
+        "E": "I do not know"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 5,
+      "word": "cooperative",
+      "excerpt": "Thank you for being so cooperative.",
+      "question": "What does the word \"cooperative\" mean?",
+      "options": {
+        "A": "Quiet",
+        "B": "Helpful and willing",
+        "C": "Curious",
+        "D": "Obedient",
+        "E": "I do not know"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 6,
+      "word": "discreet",
+      "excerpt": "I'd like to pay her to discreet visits tonight.",
+      "question": "What does the word \"discreet\" mean in this context?",
+      "options": {
+        "A": "Dangerous",
+        "B": "Friendly",
+        "C": "Careful to avoid attention",
+        "D": "Quick",
+        "E": "I do not know"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 7,
+      "word": "toxic",
+      "excerpt": "It's a highly toxic nerve gas that appears to have no effect on animals.",
+      "question": "What does the word \"toxic\" mean?",
+      "options": {
+        "A": "Invisible",
+        "B": "Explosive",
+        "C": "Poisonous",
+        "D": "Artificial",
+        "E": "I do not know"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 8,
+      "word": "manual",
+      "excerpt": "Well, Raker 6, you are now in manual.",
+      "question": "What does the word \"manual\" mean here?",
+      "options": {
+        "A": "Written down",
+        "B": "Controlled by a person",
+        "C": "Mechanical failure",
+        "D": "Slow",
+        "E": "I do not know"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 9,
+      "word": "nominal",
+      "excerpt": "life support system nominal.",
+      "question": "What does the word \"nominal\" mean in this sentence?",
+      "options": {
+        "A": "Broken",
+        "B": "New",
+        "C": "Expensive",
+        "D": "Working normally",
+        "E": "I do not know"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 10,
+      "word": "progenitors",
+      "excerpt": "You have been selected as its progenitors, like gods.",
+      "question": "What does the word \"progenitors\" mean?",
+      "options": {
+        "A": "Enemies",
+        "B": "Scientists",
+        "C": "Leaders",
+        "D": "Ancestors or creators",
+        "E": "I do not know"
+      },
+      "correct_answer": "D"
+    }
+  ]
+}

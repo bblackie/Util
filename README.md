@@ -21,6 +21,13 @@ source venv/bin/activate
 To install Flask, if not already installed
 ==========================================
 pip install flask
+pip install pypdf
+
+pip install -r requirements.txt
+
+
+
+pip freeze > requirements.txt
 
 ### To run:
 
