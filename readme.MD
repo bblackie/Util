@@ -29,6 +29,10 @@ To install ffmpeg, if not already installed
 See https://www.ffmpeg.org/download.html
 choco install ffmpeg
 
+### To install Pillow
+==========================================
+pip install Pillow
+
 
 To run:
 =======
