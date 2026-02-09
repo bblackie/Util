@@ -1,9 +1,9 @@
 import os
 
 
-list = 'dge-num-y12.txt'
-folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91898(2.9) Comp Sci - AI\\Student work\\'
-folder_root2 = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\3.7 Computer Program\\Student work\\'
+list = 'initials-Y12.txt'
+folder_root = 'C:\\Repos\\12DGT\\91893-web\\'
+folder_root2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\12DGT\\Assessments\\AS91896(2.7) Computer Program\\Student work\\'
 
 
 #folder_root = 'C:\\Users\\brian.blackie\\OneDrive - Trinity Schools\\NCEA\\Exams - DCATs\\DCATs\\L3\\91909\\Student submissions\\'

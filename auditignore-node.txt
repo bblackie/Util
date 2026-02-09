@@ -1,11 +1,9 @@
 # Ignore temporary files
 *.tmp
 *.temp
-__pycache__
-__pycache__\
 
 # Dependency directories
-.venv\
+node_modules\
 
 # Not sure it can see hidden folders but add this anyway
 .git\
@@ -18,7 +16,6 @@ package-lock.json
 package.json
 readme.md
 Procfile
-*.pyc
 
 # Ignore Databases
 *.db
@@ -36,6 +33,8 @@ images\
 *.ico
 *.svg
 
+# Ignore styling
+# *.css
+
 # Sandbox and reference files
-random_list_stuff.py
 *.txt
