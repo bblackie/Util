@@ -33,7 +33,9 @@ def resize_images(root, extension):
 Main function
 '''
 
-folder = 'D:\\repos\\play\\JS-matching-game\\imgs\\STAFF\\fix\\'
+folder = 'C:\\Repos\\GitHub\\JS-matching-game\\imgs\\2026-10DGT-A\\'
 
 
-resize_images(folder, ".png")
+resize_images(folder, ".jpg")
+
+print('Mission complete.')
