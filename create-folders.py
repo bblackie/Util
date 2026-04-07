@@ -1,9 +1,8 @@
 import os
 
 
-list = 'names-Y11.txt'
-folder_root = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessments\\0. Prelims\\'
-folder_root2 = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Classes\\11DGT\\Assessments\\0. Prelims\\'
+list = 'initials-Y12.txt'
+folder_root = 'C:\\Repos\\12DGT\\91893-web\\'
 
 list2 = 'subjects.txt'
 folder_root2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\NCEA\\L3\\achievements\\AS91908 (3.9) - CS Area\\Past exams\\by topic\\'
