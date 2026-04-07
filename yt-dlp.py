@@ -39,13 +39,12 @@ yt-dlp -x --audio-format mp3 -f bestaudio "https://www.youtube.com/watch?v=7hjJ-
 
 
 
-yt-dlp -f "bestvideo+bestaudio/best" https://www.youtube.com/watch?v=HVfE5bsWX5A
+yt-dlp -f "bestvideo+bestaudio/best" https://www.youtube.com/watch?v=XEULU9FaDnY
 
 
 
 #### AUDIO ONLY DOWNLOADS ####
-yt-dlp -x --audio-format mp3 -f bestaudio https://www.youtube.com/shorts/HiX8j287Rmw
-
+yt-dlp -x --audio-format mp3 -f bestaudio https://www.youtube.com/watch?v=bLONyyhusBI
 
 '''
 
