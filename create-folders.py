@@ -1,7 +1,7 @@
 import os
 
 
-list = 'initials-Y12.txt'
+list = 'initials-Y13.txt'
 folder_root = 'C:\\Repos\\12DGT\\91893-web\\'
 
 list2 = 'subjects.txt'

@@ -1,8 +1,7 @@
-AP
-CS
-JT
+IL
 LM
-QH
-TS
-TSo
-RF
+LMi
+KR
+OW
+SM
+ER
