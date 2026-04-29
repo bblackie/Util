@@ -1,8 +1,7 @@
 IL
 LM
-LM
+LMi
 KR
-AS
 OW
 SM
 ER
