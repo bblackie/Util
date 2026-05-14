@@ -18,7 +18,8 @@ To activate virtual environment:
 
 To install Flask, if not already installed
 ==========================================
-pip install flask
+pip install yt-dlp
+
 
 To run:
 =======
