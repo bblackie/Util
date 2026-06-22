@@ -1,8 +1,8 @@
 import os
 
 # Year groups
-list = 'initials-Y13.txt'
-folder_root = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\13DGT\\Assessments\\AS91901(3.2) Design\\Student work\\'
+list = 'names-Y10.txt'
+folder_root = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\10DGT-A\\Assessments\\2. GDevelop game\\Student work\\'
 
 
 # Subject groups
