@@ -1,3 +1,12 @@
+# Ignore temporary files
+*.tmp
+*.temp
+__pycache__
+__pycache__\
+
+# Dependency directories
+.venv\
+
 # Not sure it can see hidden folders but add this anyway
 .git\
 .vscode\
@@ -8,3 +17,25 @@ desktop.ini
 package-lock.json
 package.json
 readme.md
+Procfile
+*.pyc
+
+# Ignore Databases
+*.db
+*.sqlite
+*.db
+*.db3
+*.sqlite3
+*.sqbpro
+
+# Ignore media files
+*.mp4
+images\
+*.png
+*.jpg
+*.ico
+*.svg
+
+# Sandbox and reference files
+random_list_stuff.py
+*.txt
