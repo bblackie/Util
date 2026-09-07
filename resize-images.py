@@ -33,7 +33,7 @@ def resize_images(root, extension):
 Main function
 '''
 
-folder = 'C:\\Repos\\GitHub\\JS-matching-game\\imgs\\2026-10DGT-A\\'
+folder = 'C:\\Users\\Brian.Blackie\\OneDrive - Trinity Schools\\Calendar\\Boarding\\Repton\\Admin\\new\\'
 
 
 resize_images(folder, ".jpg")
