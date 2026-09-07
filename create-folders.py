@@ -1,5 +1,8 @@
 import os
 
+# Year groups
+list = 'names-Y10.txt'
+folder_root = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\Classes\\10DGT-A\\Assessments\\2. GDevelop game\\Student work\\'
 
 def create_folders_by_class(list, folder_root):
     with open(f'data/classes/{list}') as x:
@@ -27,5 +30,8 @@ create_folders_by_class(list, folder_root)
 # folder_root2 = 'C:\\Users\\brian\\OneDrive - Trinity Schools\\NCEA\\L3\\achievements\\AS91908 (3.9) - CS Area\\Past exams\\by topic\\'
 # create_folders_by_subject(list2, folder_root2)
 
+
+create_folders_by_year(list, folder_root)
+#create_folders_by_subject(list2, folder_root2)
 
 print('Mission complete.')
