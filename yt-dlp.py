@@ -37,19 +37,24 @@ yt-dlp -f bestaudio --cookies-from-browser firefox -o '~/downloads/%(title)s.%(e
 yt-dlp -f bestaudio --cookies-from-browser firefox "https://www.youtube.com/playlist?list=PLA4uAeilYkMzLU4Us41Gl1lePiyXutz52"
 yt-dlp -x --audio-format mp3 -f bestaudio "https://www.youtube.com/watch?v=7hjJ-CVxhPk"
 
+yt-dlp -f "bestvideo+bestaudio/best" --cookies-from-browser firefox https://www.youtube.com/watch?v=uYZAD7QsISg
 
 
-yt-dlp -f "bestvideo+bestaudio/best" https://www.youtube.com/watch?v=XEULU9FaDnY
-
+#### VIDEO DOWNLOADS ####
+yt-dlp -f "bestvideo+bestaudio/best" https://www.youtube.com/watch?v=uYZAD7QsISg
 
 
 #### AUDIO ONLY DOWNLOADS ####
-yt-dlp -x --audio-format mp3 -f bestaudio https://www.youtube.com/watch?v=Tb3ucK_OKso
+yt-dlp -f bestaudio/best https://www.youtube.com/watch?v=SHiZJf6hfjk
 
 '''
 
+# Software Design Patterns
+https://www.youtube.com/watch?v=BJatgOiiht4
 
-https://www.youtube.com/watch?v=_Ci9sOih_20
-https://www.youtube.com/watch?v=MZmgbDzT_ZQ
-https://www.youtube.com/watch?v=u1hAoc8swzc
-https://www.youtube.com/watch?v=Tb3ucK_OKso
+# Frameworks and web design patterns
+
+# Leetcode
+https://www.youtube.com/watch?v=AGGqPhBvZTg
+https://www.youtube.com/watch?v=aHZW7TuY_yo
+
