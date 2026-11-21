@@ -13,6 +13,34 @@ git clone https://github.com/xenova/whisper-web.git
 
 
 
+yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=pU_FkIVxRNQ --ffmpeg-location C:\ffmpeg\bin
+
+https://www.youtube.com/watch?v=0DC07eDxf8k&list=RD0DC07eDxf8k&start_radio=1
+
+https://www.youtube.com/shorts/YGJPYh713d0
+
+################
+[download] Got error: HTTP Error 403: Forbidden
+ERROR: fragment 1 not found, unable to continue
+WARNING: Unable to download format 616. Skipping...
+
+// solution: pip install --upgrade yt-dlp
+################
+
+
+
+yt-dlp --cookies-from-browser firefox https://www.youtube.com/watch?v=ACucrVBq8Yg --ffmpeg-location C:\ffmpeg\bin
+
+
+
+
+https://www.youtube.com/watch?v=jB0JF7ln7lg
+
+https://www.youtube.com/watch?v=jB0JF7ln7lg
+
+--ffmpeg-location C:\ffmpeg\bin
+
+
 step 1: cd to destination drive
 
 Step 2: Use the get cookie locally extension to update the cookie info
